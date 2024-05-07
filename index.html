@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #h1 {
+            background-color: black;
+            width: 100%;
+            height: 150px;
+            font-weight: bold;
+        }
+
+        #h2 {
+            background-color: red;
+            /* border: 2px solid white; */
+            width: 100%;
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .nav {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar {
+            margin-top: 20px;
+            margin-right: 50px;
+            display: none;
+
+        }
+
+        .a {
+            font-size: 20px;
+            text-decoration: none;
+            margin-left: 3%;
+            color: white;
+            font-weight: bold;
+        }
+
+        .carousel-control-prev-icon {
+            background-color: gray;
+
+
+        }
+
+        .carousel-control-next-icon {
+            background-color: gray;
+
+        }
+
+        h1 {
+            text-align: center;
+            padding-top: 55px;
+        }
+
+        section {
+            text-align: center;
+            padding-top: 25px;
+        }
+
+        .t {
+            border-radius: 20px;
+            background-color:white ;
+            padding: 10px;
+            width: 25%;
+            height: 50px;
+        }
+        .t input{
+            border:none;
+            outline: none;
+            margin-left: 10px;
+
+        }
+
+
+        #s1 {
+            background-color: #f1ecf3;
+            height: 250px;
+        }
+
+        .art {
+
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-imag: url("https://www.familyshopperstores.co.uk/themes/custom/familyshopperconsumer/images/backgrounds/offerBlockRaysBG.jpg");
+            width: 100%;
+            height: 500px;
+        }
+
+        .g1 {
+            margin-top: 50px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .a1{
+            width: 90%;
+        }
+
+        .hide {
+            font-size: larger;
+            border-radius: 20px;
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            display: none;
+        }
+
+        #view {
+            font-size: larger;
+            border-radius: 20px;
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            margin-left: 42%;
+            margin-top: 3%;
+        }
+
+        .a1:hover {
+            opacity: 0.5;
+            
+        }
+
+        footer {
+            text-align: center;
+            width: 100%;
+            height: 300px;
+            display: flex;
+
+        }
+
+        .l1 {
+            padding-top: 50px;
+            background-color: black;
+            width: 100%;
+        }
+
+        .r1 {
+            background-color: red;
+            width: 100%;
+        }
+
+        .f1 {
+            padding-top: 5%;
+            padding-right: 40%;
+        }
+
+        .p {
+            font-size: 18px;
+            text-decoration: none;
+            margin-left: 3%;
+            color: white;
+            font-weight: bold;
+        }
+        .m1{
+            margin-top: 12%;
+        }
+
+
+        .m {
+            margin-top: 50%;
+            font-size: 18px;
+            text-decoration: none;
+            margin-left: 3%;
+            color: white;
+            font-weight: bold;
+        }
+
+        #ft {
+            color: white;
+            font-size: 200%;
+            font-weight: bold;
+            padding-top: 3%;
+            padding-right: 30%;
+
+        }
+
+        .ad {
+            border-radius: 20px;
+
+            width: 30%;
+            height: 50px;
+        }
+
+        .se {
+            border-radius: 20px;
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            outline: none;
+        }
+
+        .z {
+            margin-left: -30%;
+            padding-top: 5%;
+        }
+
+        #boo {
+
+            font-weight: bolder;
+            color: white;
+            margin-left: 55%;
+            margin-top: 5%;
+
+        }
+        #a2{
+            position: relative;
+        }
+        #a2:hover #hide1{
+            top:25%;
+            left:25%;
+            display: block;
+            position: absolute;
+            opacity: 0.7;
+
+        }
+        #a3{
+            position: relative;
+        }
+        #a3:hover #hide2{
+            top:25%;
+            left:25%;
+            display: block;
+            position: absolute;
+            opacity: 0.7;
+
+        }
+        #a4{
+            position: relative;
+        }
+        #a4:hover #hide3{
+            top:25%;
+            left:25%;
+            display: block;
+            position: absolute;
+            opacity: 0.7;
+
+        }
+        #a5{
+            position: relative;
+        }
+        #a5:hover #hide4{
+            top:25%;
+            left:25%;
+            display: block;
+            position: absolute;
+            opacity: 0.7;
+        }
+        .ff{
+            display: none;
+        }
+
+        @media screen and (max-width:767px) {
+            .navbar {
+                display: block;
+            }
+
+            .nav {
+                display: none;
+            }
+            #h1{
+                height: 80px;
+            }
+            
+
+            .g1 {
+                display: grid;
+                grid-template-columns: auto auto;
+                text-align: center;
+
+            }
+
+            .a1 {
+                width: 70%;
+                margin-top: 30px;
+            }
+
+
+            .art {
+                height: 900px;
+            }
+
+            .ff1{
+                display: none;
+            }
+
+            .ff{
+                display: block;
+            }
+
+            .navbar1{
+                width: 80%;
+                height: 200px;
+                margin-left: 20%;
+                margin-top: 5%;
+                /* border: 2px solid black; */
+            }                 
+            .z{
+                height: 300px;
+            }
+            #ft{
+                margin-left: 10%;
+            }
+            .t{
+                margin-left: 25%;
+
+            }
+            .t1{
+                width: 40%;
+                border: 2px solid black;
+    
+            }
+            .se{
+                width: 20%;
+            }
+            .f1{
+                margin: 0;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="h1">
+            <div id="h2">
+                <img id="logo"
+                    src="https://www.familyshopperstores.co.uk/themes/custom/familyshopperconsumer/images/ui/logo.png"
+                    alt="">
+                <div class="navbar"><i class="fa-solid fa-bars fa-2xl" style="color: #ffff;"></i></div>
+            </div>
+            <nav class="nav">
+                <a class="a" href="">Special offers</a>
+                <a class="a" href="">Store Locator</a>
+                <a class="a" href="">Own Label</a>
+                <a class="a" href="">About us</a>
+                <a class="a" href="">Contact</a>
+            </nav>
+
+        </div>
+    </header>
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://www.familyshopperstores.co.uk/sites/default/files/styles/header_image/public/slide/image/Bargains-Everyday_0.jpg?itok=OTfTYe28"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.familyshopperstores.co.uk/sites/default/files/styles/header_image/public/slide/image/NP3-24-banner-1-homepage.jpg?itok=RIGXjNlK"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.familyshopperstores.co.uk/sites/default/files/styles/header_image/public/slide/image/NP3-24-banner-2-homepage.jpg?itok=Tk_OZsJZ"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item active">
+                <img src="https://www.familyshopperstores.co.uk/sites/default/files/styles/header_image/public/slide/image/NP3-24-banner-3-homepage.jpg?itok=BKU_Ygme"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item active">
+                <img src="https://www.familyshopperstores.co.uk/sites/default/files/styles/header_image/public/slide/image/NP3-24-banner-4-homepage.jpg?itok=xCD1TqjZ"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item active">
+                <img src="https://www.familyshopperstores.co.uk/sites/default/files/styles/header_image/public/slide/image/NP3-24-banner-5-homepage.jpg?itok=abkB8Bg5"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item active">
+                <img src="https://www.familyshopperstores.co.uk/sites/default/files/styles/header_image/public/slide/image/NP3-24-banner-6-homepage.jpg?itok=ToMFzBuh"
+                    class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div id="s1">
+        <h1>Find your Family Shopper</h1>
+        <section>
+            <span class="t"><input type="text" name="Address"  placeholder="Address"></span>
+            
+            <button class="se">Search</button>
+        </section>
+    </div>
+    <article class="art">       
+        <h1>More great offers in store this week</h1>
+        <div class="g1">
+            <div id="a2">
+                <img class="a1" 
+                    src="https://www.familyshopperstores.co.uk/sites/default/files/styles/offer_thumbnail_quarter/public/NP3-24-pepsi-max-cherry-doritos.png?itok=DKSbd2--"
+                    alt="">
+                <button class="hide" id="hide1">View offer</button>
+            </div>
+            <div id="a3">
+                <img class="a1" 
+                    src="https://www.familyshopperstores.co.uk/sites/default/files/styles/offer_thumbnail_quarter/public/NP3-24-pepsi-max-cherry.png?itok=FUgtlRp0"
+                    alt="">
+                <button class="hide" id="hide2">View offer</button>
+            </div>
+            <div id="a4"> <img class="a1 " 
+                    src="https://www.familyshopperstores.co.uk/sites/default/files/styles/offer_thumbnail_quarter/public/NP3-24-carlsberg.png?itok=Aj0LxtLh"
+                    alt="">
+                <button class="hide" id="hide3">View offer</button>
+            </div>
+            <div id="a5">
+                <img class="a1"  
+                    src="https://www.familyshopperstores.co.uk/sites/default/files/styles/offer_thumbnail_quarter/public/NP3-24-red-bull.png?itok=FnjPlHE9"
+                    alt="">
+                    <button class="hide" id="hide4">View offer</button>
+            </div>
+        </div>
+        
+        <button id="view">View all offers</button>
+    </article>
+    <footer class="ff1">
+        <div class="l1">
+            <nav>
+                <a class="p" href="">ABOUT US</a>
+                <a class="p" href="">SPECIAL OFFERS</a>
+                <a class="p" href="">OWN LABEL</a>
+                <a class="p" href="">CONTACT</a>
+            </nav>
+            <img class="f1"
+                src="https://www.familyshopperstores.co.uk/themes/custom/familyshopperconsumer/images/ui/logo-white.png"
+                alt="">
+            <nav class="m1">
+                <a class="m" href="">Privacy Statement</a>
+                <a class="m" href="">Terms & Conditions</a>
+                <a class="m" href="">Cookie Preferences</a>
+            </nav>
+
+        </div>
+        <div class="r1">
+            <h1 id="ft">Find your Family Shopper</h1>
+            <div class="z">
+                <span class="t"><input type="text" name="Address"  placeholder="Address"></span>
+                <button class="se">Search</button>
+                <div id="boo">&#169Booker</div>
+            </div>
+        </div>
+
+    </footer>
+    <footer class="ff"> 
+        <div class="r1">
+            <h1 id="ft">Find your Family Shopper</h1>
+            <div class="z">
+                <span class="t"><input class="t1" type="text" name="Address"  placeholder="Address"></span>
+                <button class="se">Search</button>
+            <div class="navbar1">
+                <a class="p" href="">ABOUT US</a><br>
+                <a class="p" href="">SPECIAL OFFERS</a><br>
+                <a class="p" href="">OWN LABEL</a><br>
+                <a class="p" href="">CONTACT</a><br>
+            </div>
+         
+            </div>
+        </div>
+        <div class="l1">
+            <img class="f1"
+            src="https://www.familyshopperstores.co.uk/themes/custom/familyshopperconsumer/images/ui/logo-white.png" alt="">
+            
+            <nav class="m1">
+                <a class="m" href="">Privacy Statement</a><br>
+                <a class="m" href="">Terms & Conditions</a><br>
+                <a class="m" href="">Cookie Preferences</a><br>
+            </nav>
+            <div id="boo">&#169Booker</div>
+
+        </div>
+    </footer>
+  
+
+
+</body>
+
+</html>
